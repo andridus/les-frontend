@@ -1,0 +1,18 @@
+image: rambabusaravanan/firebase
+stages:
+  - deploy
+cache:
+  paths:
+    - node_modules/
+  key: "$CI_BUILD_REPO"
+
+deploy-prod:
+  stage: deploy
+  only:
+    - master
+  script:
+    - yarn
+    - yarn run build --no-prerender
+    - firebase use letras-solidarias --token $FIREBASE_TOKEN
+    - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_TOKEN
+

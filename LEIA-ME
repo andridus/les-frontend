@@ -1,0 +1,16 @@
+acrescentar uma tabela para historico de envios do gestor
+
+Table: j3_historico_envios
+Columns:
+id  int(11) PK
+usuario int(11)
+redacao int(11)
+status  int(11)
+enviado_em  datetime
+criado_por  int(11)
+tema int(11)
+
+1 - Enviado
+2 - Erro no Envio
+3 - Removido
+4 - Erro na Remoçã0

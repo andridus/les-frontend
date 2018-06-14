@@ -1,0 +1,132 @@
+.header nav a.active {
+	background: rgba(0,0,0,0.4);
+}
+.label-main-menu {
+    margin-left: 5px;
+}
+.login-button{
+    border-radius: 2px;
+		font-size:18px!important;
+    font-weight: bold;
+		height: 50px;
+
+
+}
+.el-message {
+    z-index:15000;
+}
+.np {
+    pointer-events: none;
+}
+
+.box-login{
+	max-width: 350px;
+	margin:auto;
+	margin-top:50px;
+	background-color: #FFF;
+	padding: 40px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-radius: 15px;
+}
+.box-login img{
+	width: 200px;
+
+}
+a.box-event{
+  padding-top:22px;
+  color: #505050;
+  border: 1px solid #505050;
+  width: 170px;
+  height: 150px;
+  display: inline-block;
+  transition: 0.2 all;
+  border-radius: 5px;
+}
+a.box-event:hover{
+  color: #391212;
+  border: 1px solid #391212;
+}
+.selected_row{
+  background: #EAEAEA!important;
+}
+.selected_row:nth-child(odd){
+  background: #F0EFEF!important;
+}
+#viewer{
+  margin-top: 30px;
+}
+.resumo{
+  transition: all 0.2s;
+  display: none;
+  right:0px;
+  top:0px;
+
+}
+.buttons-resumo{
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 5px;
+  margin-bottom: -5px;
+
+}
+.scrolled{
+  padding-bottom:80px;
+}
+.button-escolha{
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.uk-text-meta{
+  font-size:13px;
+  line-height:thin;
+}
+#messages{
+  position: fixed;
+  top:0px;
+  z-index: 500000;
+  width: 100%;
+  transition: all 0.5s;
+}
+#messages > .mess{
+  position: relative;
+
+}
+#messages > .mess > .close{
+  position: absolute;
+  right:15px;
+  top:10px;
+  width: 25px;
+  text-align: center;
+  z-index: 5000001;
+}
+#messages > .mess > .close:hover{
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+.error-modal{
+  padding: 15px;
+}
+#loading{
+  background: rgba(0,0,0,0.4);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0px;
+  z-index: 10000000;
+}
+#loading .content{
+  margin: auto;
+  transform: translateY(-50%);
+  position: fixed;
+  width: 100%;
+  top:50%;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  background: #FFF;
+  padding:25px;
+}
+#loading .logo{
+  width: 50px;
+}

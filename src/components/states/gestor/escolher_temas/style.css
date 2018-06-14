@@ -1,0 +1,43 @@
+div.dz-details{
+ background: rgb(232, 232, 232);
+ padding:5px;
+ margin-top:20px;
+}
+img.img{
+float: left;
+margin-right: 10px;
+}
+.selecao_tema{
+height: 357px;
+border:1px dashed rgb(85, 163, 187);
+margin-bottom:20px;
+padding:5px;
+overflow-x:scroll;
+overflow-y: hidden;
+}
+.selecao_tema > div{
+  padding:5px;
+
+}
+.tema_1{
+float: left;
+margin-right:10px;
+width:200px;
+font-size:13px;
+min-height: 320px;
+border: 1px solid rgb(221, 221, 221);
+transition: all 0.4s;
+padding: 5px;
+}
+.tema_1:last-child{
+margin-right:0px;
+}
+.tema_1.hover{
+border: 1px solid rgb(14, 103, 101);
+background: rgb(244, 235, 218)
+}
+.link_mais_temas{
+  float:right;
+  margin-top: -15px;
+  font-size: 13px;
+}
